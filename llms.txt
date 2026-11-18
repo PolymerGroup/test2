@@ -1,0 +1,47 @@
+# Peptide Scientific
+
+> B2B supplier of research-grade peptides, custom peptide synthesis and independent HPLC / LC-MS analytical services for institutional laboratories, CROs and analytical facilities. For in-vitro laboratory research use only. Not for human or veterinary use, and not for diagnostic or therapeutic use. Institutional supply only.
+
+Peptide Scientific is a business-to-business research supplier. Every lot is released against independent analytical data and ships with a batch-specific Certificate of Analysis (COA), Safety Data Sheet (SDS) and chain-of-custody record. Pricing and lead time are quoted per project; the website is an inquiry channel, not a consumer checkout.
+
+## Compliance
+
+- Supplied for in-vitro laboratory research use only.
+- Not for human or veterinary use. Not for diagnostic or therapeutic use.
+- Sold to qualified research institutions only; not to consumers.
+
+## Contact
+
+- Email: abc@abc.com (quotations, documentation, B2B agreements)
+- WhatsApp / Phone: +86 15866781826 (business inquiries)
+- Business hours: Mon–Fri, 09:00–18:00 (CST)
+
+## Pages
+
+- index.html — overview, featured reference standards, batch verification entry
+- catalog.html — full catalogue with category filters and search
+- verify.html — batch verification and COA lookup by lot code
+- quality.html — quality system, documentation pack, released-lot COA library
+- about.html — company and supply process
+- faq.html — ordering, documentation and compliance questions
+- contact.html — institutional inquiry form and contact details
+- product-bpc-157.html, product-tb-500.html, product-mots-c.html, product-glp1-7-36.html — product detail pages
+
+## Reference catalogue
+
+- BPC-157 Reference Standard — CAS 137525-51-0, MW 1419.5 Da, purity ≥98% (HPLC). For in-vitro research use only.
+- TB-500 Reference Standard — CAS 77591-33-4, MW 889.0 Da, purity ≥98% (HPLC). Thymosin beta-4 fragment (17–23).
+- MOTS-c Reference Standard — CAS 1963811-16-3, MW 2170.6 Da, purity ≥97% (HPLC).
+- GLP-1 (7-36) Amide Reference Standard — CAS 107444-51-9, MW 3297.7 Da, purity ≥95% (HPLC).
+
+## Capabilities
+
+- Custom peptide synthesis: sequence-to-vial synthesis, HPLC purification, independent MS confirmation, gram scale.
+- Analytical services: RP-HPLC purity, ESI-LC-MS identity, water content and appearance testing, signed report.
+- Documentation: batch-specific COA, SDS / MSDS, Certificate of Origin, export documentation, cold-chain packing record.
+- Batch traceability: lot code linked to release record and chain of custody.
+
+## Notes
+
+- This file follows the llms.txt convention: a machine-readable index for LLM crawlers.
+- The domain, product figures and lot records shown on the website are placeholders to be replaced with verified data before publication.

@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peptide Scientific — Research-Grade Peptides for Institutional Laboratories</title>
+  <meta name="description" content="B2B supplier of research-grade peptides, custom synthesis and independent HPLC / LC-MS analytical data for institutional laboratories and CROs. Every lot ships with a batch-specific COA and SDS. For in-vitro research use only." />
+  <link rel="canonical" href="https://example.com/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Peptide Scientific — Research-Grade Peptides for Laboratories" />
+  <meta property="og:description" content="Batch-verified reference peptides, custom synthesis and analytical services for institutional research. For in-vitro research use only." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tw.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Peptide Scientific",
+        "url": "https://example.com",
+        "description": "B2B supplier of research-grade peptides, custom synthesis and analytical services for institutional laboratories. For in-vitro research use only.",
+        "email": "abc@abc.com",
+        "telephone": "+86-15866781826"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Peptide Scientific",
+        "url": "https://example.com"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-700 antialiased" data-page="home">
+  <main>
+    <!-- Hero -->
+    <section class="grid-pattern border-b border-slate-200 bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <span class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+              <i data-lucide="badge-check" class="h-3.5 w-3.5"></i>
+              ISO 9001:2015 · Independent HPLC / LC-MS verification
+            </span>
+            <h1 class="mt-5 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+              Research-grade peptides,
+              <span class="text-brand-600">documented batch by batch.</span>
+            </h1>
+            <p class="mt-5 max-w-xl text-lg leading-relaxed text-slate-600">
+              Peptide Scientific supplies institutional laboratories, CROs and analytical
+              facilities with reference-grade peptides, custom synthesis and third-party
+              verified analytical data — every shipment carries a batch-specific COA,
+              SDS and chain-of-custody record.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+              <a href="catalog.html" class="inline-flex items-center gap-2 rounded-lg bg-slate-900 px-5 py-3 text-sm font-bold text-white transition hover:bg-brand-700">
+                <i data-lucide="search" class="h-4 w-4"></i>
+                Browse the catalogue
+              </a>
+              <a href="verify.html" class="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-800 transition hover:border-brand-500 hover:text-brand-700">
+                <i data-lucide="shield-check" class="h-4 w-4"></i>
+                Verify a batch
+              </a>
+            </div>
+            <p class="mt-4 text-xs text-slate-500">Institutional supply only. We do not sell to consumers.</p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/60 sm:p-8">
+            <div class="flex items-center gap-3">
+              <span class="grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-700">
+                <i data-lucide="barcode" class="h-5 w-5"></i>
+              </span>
+              <div>
+                <h2 class="text-base font-bold text-slate-900">Verify a batch</h2>
+                <p class="text-xs text-slate-500">Enter the lot code printed on the vial label.</p>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-col gap-2 sm:flex-row">
+              <input id="lotInput" type="text" placeholder="e.g. PS-BPC-2411-05" autocomplete="off" class="w-full rounded-lg border border-slate-300 bg-slate-50 px-4 py-2.5 font-mono text-sm text-slate-800 placeholder:text-slate-400 focus:border-brand-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-100" />
+              <button type="button" id="verifyBtn" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-brand-700">
+                <i data-lucide="scan-line" class="h-4 w-4"></i> Verify
+              </button>
+            </div>
+            <p id="verifyResult" class="mt-3 hidden text-xs"></p>
+            <div class="mt-4 rounded-lg border border-dashed border-slate-200 bg-slate-50 px-3 py-2 font-mono text-[11px] text-slate-500">
+              Demo lots: PS-BPC-2411-05 · PS-TB-2410-02 · PS-MOTS-2412-01
+            </div>
+          </div>
+        </div>
+
+        <dl class="mt-14 grid grid-cols-2 gap-4 border-t border-slate-200 pt-8 sm:grid-cols-4">
+          <div><dt class="text-xs font-semibold uppercase tracking-wider text-slate-500">Reference compounds</dt><dd class="mt-1 font-mono text-2xl font-bold text-slate-900">400+</dd></div>
+          <div><dt class="text-xs font-semibold uppercase tracking-wider text-slate-500">Mean HPLC purity</dt><dd class="mt-1 font-mono text-2xl font-bold text-emerald-600">99.2%</dd></div>
+          <div><dt class="text-xs font-semibold uppercase tracking-wider text-slate-500">COA turnaround</dt><dd class="mt-1 font-mono text-2xl font-bold text-slate-900">48 h</dd></div>
+          <div><dt class="text-xs font-semibold uppercase tracking-wider text-slate-500">Countries served</dt><dd class="mt-1 font-mono text-2xl font-bold text-slate-900">24</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="border-b border-slate-200 bg-slate-50 py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700">Featured</p>
+            <h2 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900">Reference standards in stock</h2>
+          </div>
+          <a href="catalog.html" class="hidden shrink-0 text-sm font-bold text-brand-700 hover:text-brand-800 sm:block">View full catalogue →</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-200/70">
+            <a href="product-bpc-157.html" class="relative block aspect-[4/3] bg-gradient-to-br from-slate-100 to-slate-200">
+              <img src="images/bpc-157.png" alt="BPC-157 Reference Standard" loading="lazy" class="h-full w-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.classList.add('is-shown')" />
+              <div class="img-fallback absolute inset-0 place-items-center text-slate-300"><i data-lucide="flask-conical" class="h-14 w-14"></i></div>
+              <span class="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-semibold text-slate-600 backdrop-blur">Reference Standards</span>
+              <span class="absolute right-3 top-3 rounded-full bg-emerald-50 px-2.5 py-1 font-mono text-[11px] font-bold text-emerald-700 ring-1 ring-emerald-200">≥98%</span>
+            </a>
+            <div class="flex flex-1 flex-col p-5">
+              <h3 class="text-base font-bold leading-snug text-slate-900"><a href="product-bpc-157.html" class="hover:text-brand-700">BPC-157 Reference Standard</a></h3>
+              <p class="mt-1.5 font-mono text-[11px] text-slate-500">CAS 137525-51-0 · MW 1419.5 Da</p>
+              <p class="mt-2 flex-1 text-sm text-slate-600">Lyophilised pentadecapeptide reference standard for in-vitro research.</p>
+              <a href="product-bpc-157.html" class="mt-4 text-sm font-bold text-brand-700 hover:text-brand-800">View details →</a>
+            </div>
+          </article>
+
+          <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-200/70">
+            <a href="product-tb-500.html" class="relative block aspect-[4/3] bg-gradient-to-br from-slate-100 to-slate-200">
+              <img src="images/tb-500.png" alt="TB-500 Reference Standard" loading="lazy" class="h-full w-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.classList.add('is-shown')" />
+              <div class="img-fallback absolute inset-0 place-items-center text-slate-300"><i data-lucide="flask-conical" class="h-14 w-14"></i></div>
+              <span class="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-semibold text-slate-600 backdrop-blur">Reference Standards</span>
+              <span class="absolute right-3 top-3 rounded-full bg-emerald-50 px-2.5 py-1 font-mono text-[11px] font-bold text-emerald-700 ring-1 ring-emerald-200">≥98%</span>
+            </a>
+            <div class="flex flex-1 flex-col p-5">
+              <h3 class="text-base font-bold leading-snug text-slate-900"><a href="product-tb-500.html" class="hover:text-brand-700">TB-500 Reference Standard</a></h3>
+              <p class="mt-1.5 font-mono text-[11px] text-slate-500">CAS 77591-33-4 · MW 889.0 Da</p>
+              <p class="mt-2 flex-1 text-sm text-slate-600">Thymosin beta-4 fragment (17–23) for in-vitro assay development.</p>
+              <a href="product-tb-500.html" class="mt-4 text-sm font-bold text-brand-700 hover:text-brand-800">View details →</a>
+            </div>
+          </article>
+
+          <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-200/70">
+            <a href="product-mots-c.html" class="relative block aspect-[4/3] bg-gradient-to-br from-slate-100 to-slate-200">
+              <img src="images/mots-c.png" alt="MOTS-c Reference Standard" loading="lazy" class="h-full w-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.classList.add('is-shown')" />
+              <div class="img-fallback absolute inset-0 place-items-center text-slate-300"><i data-lucide="flask-conical" class="h-14 w-14"></i></div>
+              <span class="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-semibold text-slate-600 backdrop-blur">Reference Standards</span>
+              <span class="absolute right-3 top-3 rounded-full bg-emerald-50 px-2.5 py-1 font-mono text-[11px] font-bold text-emerald-700 ring-1 ring-emerald-200">≥97%</span>
+            </a>
+            <div class="flex flex-1 flex-col p-5">
+              <h3 class="text-base font-bold leading-snug text-slate-900"><a href="product-mots-c.html" class="hover:text-brand-700">MOTS-c Reference Standard</a></h3>
+              <p class="mt-1.5 font-mono text-[11px] text-slate-500">CAS 1963811-16-3 · MW 2170.6 Da</p>
+              <p class="mt-2 flex-1 text-sm text-slate-600">Mitochondrial-derived peptide standard for in-vitro analytical work.</p>
+              <a href="product-mots-c.html" class="mt-4 text-sm font-bold text-brand-700 hover:text-brand-800">View details →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality teaser -->
+    <section class="border-b border-slate-200 bg-white py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700">Quality system</p>
+            <h2 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900">Verified data, not marketing copy</h2>
+            <p class="mt-3 max-w-xl text-slate-600">
+              Every lot is released against independent analytical data. Documentation is
+              issued with the shipment and is retrievable by lot code at any time.
+            </p>
+            <a href="quality.html" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-brand-700 hover:text-brand-800">
+              Read the quality &amp; documentation page <i data-lucide="arrow-right" class="h-4 w-4"></i>
+            </a>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <i data-lucide="flask-conical" class="h-5 w-5 text-brand-700"></i>
+              <h3 class="mt-3 font-bold text-slate-900">Independent HPLC</h3>
+              <p class="mt-1 text-sm text-slate-600">RP-HPLC purity reported per lot.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <i data-lucide="microscope" class="h-5 w-5 text-brand-700"></i>
+              <h3 class="mt-3 font-bold text-slate-900">LC-MS identity</h3>
+              <p class="mt-1 text-sm text-slate-600">Observed vs. theoretical mass.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <i data-lucide="barcode" class="h-5 w-5 text-brand-700"></i>
+              <h3 class="mt-3 font-bold text-slate-900">Batch traceability</h3>
+              <p class="mt-1 text-sm text-slate-600">Lot code linked to release record.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <i data-lucide="file-check" class="h-5 w-5 text-brand-700"></i>
+              <h3 class="mt-3 font-bold text-slate-900">Documentation pack</h3>
+              <p class="mt-1 text-sm text-slate-600">COA, SDS and Certificate of Origin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-slate-50 py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-2xl bg-brand-700 px-6 py-12 text-center sm:px-12">
+          <h2 class="text-2xl font-extrabold text-white sm:text-3xl">Request a quotation for your next lot</h2>
+          <p class="mx-auto mt-3 max-w-xl text-brand-100">Send your sequence, target specification and documentation requirements — we reply within one business day.</p>
+          <a href="contact.html" class="mt-6 inline-flex items-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-bold text-brand-800 hover:bg-brand-50">Contact our sales desk</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Peptide Scientific</title>
+  <meta name="description" content="Contact Peptide Scientific for quotations, documentation and B2B supply agreements. Email abc@abc.com or WhatsApp +86 15866781826." />
+  <link rel="canonical" href="https://example.com/contact.html" />
+  <meta property="og:title" content="Contact — Peptide Scientific" />
+  <meta property="og:description" content="Technical and institutional inquiries." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tw.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-slate-50 font-sans text-slate-700 antialiased" data-page="contact">
+  <main>
+    <section class="border-b border-slate-200 bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-5">
+          <div class="lg:col-span-2">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-brand-700">Contact</p>
+            <h1 class="mt-2 text-4xl font-extrabold tracking-tight text-slate-900">Technical &amp; institutional inquiries</h1>
+            <p class="mt-3 text-slate-600">For quotations, documentation requests and B2B supply agreements. We reply within one business day.</p>
+
+            <dl class="mt-8 space-y-5">
+              <div class="flex items-start gap-3">
+                <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-brand-50 text-brand-700"><i data-lucide="mail" class="h-5 w-5"></i></span>
+                <div><dt class="text-xs font-bold uppercase tracking-wide text-slate-500">Email</dt><dd><a href="mailto:abc@abc.com" class="font-semibold text-slate-900 hover:text-brand-700">abc@abc.com</a></dd></div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-brand-50 text-brand-700"><i data-lucide="message-circle" class="h-5 w-5"></i></span>
+                <div>
+                  <dt class="text-xs font-bold uppercase tracking-wide text-slate-500">WhatsApp / Phone (B2B)</dt>
+                  <dd class="font-mono font-semibold text-slate-900">+86 15866781826</dd>
+                  <dd class="mt-1"><a href="https://wa.me/8615866781826?text=Business%20inquiry%20%E2%80%94%20Peptide%20Scientific" target="_blank" rel="noopener" class="text-sm font-semibold text-brand-700 hover:text-brand-800">Open WhatsApp inquiry →</a></dd>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-brand-50 text-brand-700"><i data-lucide="clock" class="h-5 w-5"></i></span>
+                <div><dt class="text-xs font-bold uppercase tracking-wide text-slate-500">Business hours</dt><dd class="font-semibold text-slate-900">Mon–Fri, 09:00–18:00 (CST)</dd></div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-brand-50 text-brand-700"><i data-lucide="map-pin" class="h-5 w-5"></i></span>
+                <div><dt class="text-xs font-bold uppercase tracking-wide text-slate-500">Registered address</dt><dd class="text-sm text-slate-600">Add your registered laboratory address here</dd></div>
+              </div>
+            </dl>
+          </div>
+
+          <div class="lg:col-span-3">
+            <form id="inquiryForm" class="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+              <div class="grid gap-4 sm:grid-cols-2">
+                <label class="block text-sm font-semibold text-slate-700">Name
+                  <input name="name" type="text" required class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm font-normal focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100" />
+                </label>
+                <label class="block text-sm font-semibold text-slate-700">Institution / Company
+                  <input name="organization" type="text" required class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm font-normal focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100" />
+                </label>
+                <label class="block text-sm font-semibold text-slate-700">Work email
+                  <input name="email" type="email" required class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm font-normal focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100" />
+                </label>
+                <label class="block text-sm font-semibold text-slate-700">Country
+                  <input name="country" type="text" class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm font-normal focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100" />
+                </label>
+              </div>
+              <label class="mt-4 block text-sm font-semibold text-slate-700">Research requirement
+                <textarea name="message" rows="4" required placeholder="Sequence / item, quantity, analytical requirements, documentation needed…" class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm font-normal focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"></textarea>
+              </label>
+              <label class="mt-4 flex items-start gap-2.5 text-sm text-slate-600">
+                <input name="researchOnly" type="checkbox" required class="mt-0.5 h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
+                <span>I confirm this material is for in-vitro laboratory research use only, and not for human or veterinary use.</span>
+              </label>
+              <div class="mt-6 flex flex-wrap items-center gap-3">
+                <button type="submit" class="inline-flex items-center gap-2 rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-brand-700">
+                  <i data-lucide="send" class="h-4 w-4"></i> Send inquiry
+                </button>
+                <p class="text-xs text-slate-500">Opens a pre-filled message to abc@abc.com.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
